@@ -6,7 +6,7 @@ r = int(input('Razão: '))
 c = 0
 print('Os dez primeiros termos da P.A. são:')
 while c != 9:
-    print(f'{p}', end=' → ')
-    p = p + r
+    print(p, end=' → ')
+    p += r
     c += 1
-print(f'{p + r}')
+print(p)
