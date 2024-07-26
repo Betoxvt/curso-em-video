@@ -3,15 +3,15 @@
 # A) Quantas vezes apareceu o valor 9.
 # B) Em que posição foi digitado o primeiro valor 3.
 # C) Quais foram os números pares.
-v0 = int(input('Enter the first number: '))
-v1 = int(input('Enter the second number: '))
-v2 = int(input('Enter the third number: '))
-v3 = int(input('Enter the fourth number: '))
-tup = (v0, v1, v2, v3)
+tup = (int(input('Enter the first number: ')),
+       int(input('Enter the second number: ')),
+       int(input('Enter the third number: ')),
+       int(input('Enter the fourth number: ')))
+print(f'You entered {tup}')
 even = ''
 print(f'A) "9" appeared {tup.count(9)} times')
 if 3 in tup:
-    print(f'B) First "3" appeared at position {tup.index(3)+1}')
+    print(f'B) First "3" appeared at position {tup.index(3) + 1}')
 else:
     print('B) "3" is not present in the Tuple')
 for n in tup:
