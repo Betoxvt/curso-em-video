@@ -4,9 +4,9 @@
 tup = ('journey', 'python', 'screen', 'code', 'computer', 'vowels', 'exercises', 'show')
 vowels = ''
 for i in tup:
-    print(f'\nThe word "{i}" has the vowels:', end=' ')
+    print(f'\nThe word "{i.upper()}" has the vowels:', end=' ')
     for j in i:
-        if j in 'aeiou':
+        if j.lower() in 'aeiou':
             vowels += f'"{j}", '
     vowels = vowels[:-2]
     print(vowels[::-1].replace(',', ' and'[::-1], 1)[::-1])
