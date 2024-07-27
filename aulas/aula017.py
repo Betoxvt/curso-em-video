@@ -1,19 +1,19 @@
-# Compound variables - List (part 1)
-# Lists are mutable, you can add, remove, or modify itens in a  list.
+# Compound variables — List (part 1)
+# Lists are mutable, you can add, remove, or modify objects in a list.
 # A list is written inside [ ]
 
 # list.append(x) add x at the end of list
 # list.insert(0,y) add y and place it at position [0]
 
-# del list[3] deletes the item at position [3] from the list
+# del list[3] deletes the object at position [3] from the list
 # lanche.pop(3) same as above, but () removes the last
 # lanche.remove(x) deletes x from the list
-# after the removal of an item the list get re-arranged.
+# after the removal of an object the list get re-arranged.
 
-# Lists can be made with functions range and list
+# Lists can be created using the range and list functions.
 # Ex: values = list(range(4, 11))   [4, 5, 6, 7, 8, 9, 10]
 # list.sort() organized
-# list.sort(reverse=True) organized in reverse
+# list.sort(reverse=True) organized in reverse.
 
 # num = [2, 5, 9, 1]
 # num[2] = 3  # [2, 5, 3, 1]
