@@ -5,9 +5,9 @@
 # list.append(x) add x at the end of list
 # list.insert(0,y) add y and place it at position [0]
 
-# del list[3] deletes the object at position [3] from the list
-# lanche.pop(3) same as above, but () removes the last
-# lanche.remove(x) deletes x from the list
+# del list[3] deletes the object at position [3] from the list.
+# lanche.pop(3) same as above, but () removes the last value.
+# lanche.remove(x) deletes x from the list.
 # after the removal of an object the list get re-arranged.
 
 # Lists can be created using the range and list functions.
@@ -25,7 +25,7 @@
 # num.pop()  # [7, 5, 0, 3, 2]
 # num.pop(2)  # [7, 5, 3, 2]
 # num.insert(2, 7)  # [7, 5, 7, 3, 2]
-# num.remove(7)  # [5, 7, 3, 2] removes first object "7"
+# num.remove(7)  # [5, 7, 3, 2] removes first value "7"
 # # num.remove(4)  # error
 # if 4 in num:
 #     num.remove(4)
@@ -36,7 +36,7 @@
 # else:
 #     print('Could not find number 5')
 # print(num)
-# print(f'This list has {len(num)} objects.')
+# print(f'This list has {len(num)} values.')
 #
 # print('New list')
 # values = []
@@ -70,3 +70,7 @@ b = a[:]  # To make a copy that has no connection.
 b[2] = 4  # Now this changes only b
 print(f'A list: {a}')
 print(f'B list: {b}')
+
+names = ["Sam", "Peter", "James", "Julian", "Ann"]
+print(*names, sep=", ")  # '*' shows the list with no []. Sep prints the string between the values.
+# output: Sam, Peter, James, Julian, Ann
