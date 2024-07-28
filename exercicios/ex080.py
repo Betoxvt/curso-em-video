@@ -1,4 +1,4 @@
-# Sorted list without repetitions
+# List sorted directly from input
 # Create a program where the user can enter five numeric values and register them in a list,
 # already at the correct ascending position (without using sort()).
 # At the end, show the sorted list on screen.
