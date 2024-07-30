@@ -30,7 +30,7 @@ print(len(c))
 print(c.count(5))  # contagem de '5'
 print(c.index(8))  # posição do 1º 8
 print(c.index(5, 1))  # posição de 5 a partir da 1
-pessoa = ('Gustavo', 39, 'M', 99.88)  # Aceita diferentes tipos de variáveis
+pessoa = ('Gustavo', 39, 'M', 99.88)  # Aceita diferentes tipos de dados
 print(pessoa)
 del pessoa  # Podemos apagar a tupla
 print(pessoa)  # Aí não imprime mais
