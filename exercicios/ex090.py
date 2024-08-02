@@ -6,7 +6,7 @@ student['Average'] = float(input(f'{student["Name"]} Average: '))
 if student['Average'] >= 7:
     student['Situation'] = 'Passed'
 elif 5 <= student['Average'] < 7:
-    student['Situation'] = 'on probation'
+    student['Situation'] = 'On Probation'
 else:
     student['Situation'] = 'Failed'
 
