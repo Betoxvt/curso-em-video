@@ -1,4 +1,4 @@
-# Merging Dictionary and List
+# Appending dictionaries to a list
 # Create a program that reads Name, Gender and Age of multiple subjects, storing the data of each person
 # in a dictionary and all of them in a list. Finally, print:
 # A) How many people registered
