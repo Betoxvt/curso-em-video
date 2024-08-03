@@ -6,16 +6,17 @@
 # C) Females list
 # D) Above average age list
 data = list()
+agesum = 0
 while True:
-    subj = {'Name': input('Name: '),
+    subj = {'Name': input('Name: ').strip().title(),
             'Age': int(input('Age: '))}
+    agesum += subj['Age']
     while True:
         subj['Gender'] = input('Gender: [M/F] ').strip().upper()[0]
         if subj['Gender'] in 'MF':
             break
         print('Gender must be either "M" or "F".')
     data.append(subj.copy())
-    subj.clear()
     while True:
         ans = input('Wish to continue? [Y/N] ').strip().upper()[0]
         if ans in 'YN':
@@ -25,9 +26,6 @@ while True:
         break
 print('—' * 46)
 print(f'A) Total of {len(data)} people records')
-agesum = 0
-for i in range(len(data)):  # Could have made the sum inside the input while structure
-    agesum += data[i]['Age']
 average = agesum / len(data)
 print(f'B) The age average is {average:.0f}')
 print(f'C) The females registered were: ', end='')
