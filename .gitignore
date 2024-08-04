@@ -1,3 +1,1 @@
-.idea >> .gitignore
-git rm -r --cached .idead
-echo .idea
+.idea/
