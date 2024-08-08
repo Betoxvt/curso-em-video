@@ -16,7 +16,7 @@ sleep(1)
 for i, v in enumerate(turn, start=1):
     print(f"{i}º place: Player", v['Player'], "with", v['throw'])
     sleep(1)
-print(f'Congratulations! Player {turn[0]['Player']} wins!')
+print(f'Congratulations! Player {turn[0]["Player"]} wins!')
 
 # Later, in case of a tie, a tie-breaking procedure will be implemented.
 
