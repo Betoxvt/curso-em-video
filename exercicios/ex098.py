@@ -1,7 +1,7 @@
 # Counter function
-# Make a program with function called counter() that receives 3 parameters:
+# Make a program with function called counter() with 3 parameters:
 # Start, End, Step and do the counting.
-# Your program has to realize 3 countings through created function
+# Your program has to count 3 times through created function
 # a) From 1 to 10, 1 by 1;
 # b) From 10 to 0, 2 by 2;
 # c) Custom
@@ -26,16 +26,14 @@ def counter(start, end, step):
         print('-='*25)
         print(f'Counting from {start} to {end}, {step} by {step}')
         if start < end:
-            while start <= end:
-                print(start, end=' ', flush=True)
-                start += step
+            for c in range(start, end+1, step):
+                print(c, end=' ', flush=True)
                 sleep(0.6)
             print('End!')
             sleep(0.6)
         elif start > end:
-            while start >= end:
-                print(start, end=' ', flush=True)
-                start -= step
+            for c in range(start, end-1, -step):
+                print(c, end=' ', flush=True)
                 sleep(0.6)
             print('End!')
             sleep(0.6)
@@ -46,3 +44,13 @@ def counter(start, end, step):
 
 # Main script
 counter(0,0,0)
+
+# Alternative
+"""         while start <= end:
+                print(start, end=' ', flush=True)
+                start += step
+                sleep(0.6)
+            while start >= end:
+                print(start, end=' ', flush=True)
+                start -= step
+                sleep(0.6) """
