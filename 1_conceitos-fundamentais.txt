@@ -59,4 +59,6 @@
 
 ### Como a empresa se mantém?
 * Ganha com serviçoes agregados ao software livre
+* Manutenção e suporte
+* Atualização e segurança
 
