@@ -1,9 +1,9 @@
-# Extracting data from a list
-# Create a program that reads multiple numbers and place them in a list.
+# Extracting data from a numbers_list
+# Create a program that reads multiple numbers and place them in a numbers_list.
 # After that, show:
 # A) How many numbers where entered.
-# B) The list of values, sorted in descending order.
-# C) If the value 5 was entered and is or isn't in the list.
+# B) The numbers_list of values, sorted in descending order.
+# C) If the value 5 was entered and is or isn't in the numbers_list.
 numbers = list()
 while True:
     numbers.append(int(input('Enter value: ')))

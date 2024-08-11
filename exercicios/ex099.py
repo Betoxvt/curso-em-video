@@ -2,9 +2,9 @@
 # Create a program with a function called greater(), this will receive multiple parameters with integral values.
 # Your program has to analyse all values and show which is higher.
 
-def greater(* num):
+def greater(*num):
     from time import sleep
-    print('-='*30)
+    print('-=' * 30)
     print('Analyzing data...')
     sleep(0.6)
     for v in num:

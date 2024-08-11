@@ -1,9 +1,9 @@
 # Compound variables - List (part2)
 # Nested lists
-# teste = list()
+# teste = numbers_list()
 # teste.append('Gustavo')  # ['Gustavo']
 # teste.append(40)  # ['Gustavo', 40]
-# galera = list()
+# galera = numbers_list()
 # galera.append(teste[:])  # Attention! Avoid aliasing between lists, using [:]
 # teste[0] = 'Maria'  # ['Maria', 40]
 # teste[1] = 22  # ['Maria', 22]
@@ -14,7 +14,7 @@
 # galera = [['João', 19], ['Ana', 33], ['Joaquim', 13], ['Maria', 45]]
 # print(galera[2][1])  # prints 13
 # for p in galera:
-#     print(p)  # prints the list ['João', 19]...
+#     print(p)  # prints the numbers_list ['João', 19]...
 #     print(p[0])  # only names
 #     print(p[1])  # only ages
 #     print(f'{p[0]} tem {p[1]} anos de idade')

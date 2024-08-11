@@ -1,5 +1,5 @@
 # Lists with odd and even numbers
-# Create a program that the user can enter seven numeric values and register them in one list that keeps
+# Create a program that the user can enter seven numeric values and register them in one numbers_list that keeps
 # Odds and even numbers separated. At the end, print the data in ascending order.
 numbers = [[], []]
 for i in range(0, 7):

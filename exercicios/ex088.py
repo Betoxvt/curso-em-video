@@ -1,7 +1,7 @@
 # Mega-Sena (lottery) tickets generator
 # Create a program that generates random Mega-Sena number sets.
 # The program will ask the user for the desired amount tickets and then generate six random numbers
-# between 1 and 60 for each ticket, storing them in a nested list.
+# between 1 and 60 for each ticket, storing them in a nested numbers_list.
 from random import randint
 from time import sleep
 tickets = []
@@ -30,8 +30,8 @@ print('  Good luck!  '.center(36, '='))
 # Teacher's solution
 # from random import randint
 # from time import sleep
-# lista = list()
-# jogos = list()
+# lista = numbers_list()
+# jogos = numbers_list()
 # print('-' * 30)
 # print('      JOGA NA MEGA SENA      ')
 # print('-' * 30)

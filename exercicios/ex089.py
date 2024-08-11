@@ -1,6 +1,6 @@
 # Report Card with Nested Lists
 # Create a program that collects the names and two grades of multiple students
-# and stores this information in a nested list.
+# and stores this information in a nested numbers_list.
 # Calculate and display the average grade for each student and
 # allow the user to view the individual grades of a specific student. (999 to end program)
 students = []
@@ -40,7 +40,7 @@ print('='*50)
 print('END OF PROGRAM')
 
 # Teacher's solution
-# ficha = list()
+# ficha = numbers_list()
 # while True:
 #     nome = str(input('Nome: '))
 #     nota1 = float(input('Nota 1: '))

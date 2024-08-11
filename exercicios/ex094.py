@@ -1,10 +1,10 @@
-# Appending dictionaries to a list
+# Appending dictionaries to a numbers_list
 # Create a program that reads Name, Gender and Age of multiple subjects, storing the data of each person
-# in a dictionary and all of them in a list. Finally, print:
+# in a dictionary and all of them in a numbers_list. Finally, print:
 # A) How many people registered
 # B) Age average
-# C) Females list
-# D) Above average age list
+# C) Females numbers_list
+# D) Above average age numbers_list
 data = list()
 agesum = 0
 while True:

@@ -5,4 +5,4 @@ def area(length, width):
     print(f'The area of a land {length} X {width} is {area}m²')
 
 
-area(int(input('Length (m): ')), int(input('Width (m): ')))
+area(float(input('Length (m): ')), float(input('Width (m): ')))

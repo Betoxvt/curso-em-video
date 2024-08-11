@@ -1,5 +1,5 @@
-# Unique values in a list
-# Create a program where the user can enter multiple numeric values and register them in a list.
+# Unique values in a numbers_list
+# Create a program where the user can enter multiple numeric values and register them in a numbers_list.
 # If the number already exists in it, it won't get added.
 # At the end, show all the unique values entered, in ascending order.
 unique_numbers = list()

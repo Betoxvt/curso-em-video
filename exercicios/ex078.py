@@ -1,6 +1,6 @@
-# Largest and smallest values in a list
-# Create a program that reads 5 numeric values and saves them in a list.
-# At the end, show the largest, and the smallest values entered and their respective positions in the list.
+# Largest and smallest values in a numbers_list
+# Create a program that reads 5 numeric values and saves them in a numbers_list.
+# At the end, show the largest, and the smallest values entered and their respective positions in the numbers_list.
 # Class method:
 numbers_list = []
 largest = 0
@@ -27,7 +27,7 @@ for i, v in enumerate(numbers_list):
 print()
 
 # My solution
-# num = list()
+# num = numbers_list()
 # largest = [0, 0]
 # smallest = [0, 0]
 # for i in range(0, 5):
@@ -41,7 +41,7 @@ print()
 #     if num[i] == smallest[0]:
 #         smallest.append(i)
 # print('—' * 60)
-# print(f'The list formed is {num}')
+# print(f'The numbers_list formed is {num}')
 # print(f'The largest number is {largest[0]} at positions ', end='')
 # for i in range(1, len(largest)):
 #     if i > 1:

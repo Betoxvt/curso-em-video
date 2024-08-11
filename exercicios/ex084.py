@@ -1,9 +1,9 @@
-# Nested list and data analysis
-# Create a program that reads name and weight os multiple persons, saving it all in a list.
+# Nested numbers_list and data analysis
+# Create a program that reads name and weight os multiple persons, saving it all in a numbers_list.
 # At the end, print:
 # A) How many persons registered.
-# B) A list with the heaviest persons.
-# C) A list with the lightest persons.
+# B) A numbers_list with the heaviest persons.
+# C) A numbers_list with the lightest persons.
 Persons = []
 while True:
     Person = [str(input('Name: ')), float(input('Weight: '))]

@@ -1,13 +1,13 @@
 # List sorted directly from input
-# Create a program where the user can enter five numeric values and register them in a list,
+# Create a program where the user can enter five numeric values and register them in a numbers_list,
 # already at the correct ascending position (without using sort()).
-# At the end, show the sorted list on screen.
+# At the end, show the sorted numbers_list on screen.
 _list = list()
 for i in range(0, 5):
     v = int(input('Enter a value: '))
     if i == 0 or v >= _list[-1]:
         _list.append(v)
-        print('Added at the end of the list.')
+        print('Added at the end of the numbers_list.')
     elif v < _list[0]:
         _list.insert(0, v)
         print('Added at position 0.')
@@ -21,7 +21,7 @@ for i in range(0, 5):
         _list.insert(3, v)
         print('Added at position 3.')
 print('—' * 50)
-print(f'The list in ascending order is {_list} (without sort())')
+print(f'The numbers_list in ascending order is {_list} (without sort())')
 
 # Teacher’s solution
 lista = []

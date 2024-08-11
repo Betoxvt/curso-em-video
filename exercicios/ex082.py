@@ -1,5 +1,5 @@
 # Dividing values in multiple lists
-# Create a program thar will read multiple numbers and place them in a list.
+# Create a program thar will read multiple numbers and place them in a numbers_list.
 # After that, create two extra lists that will content only even values and odd values entered, respectively.
 # At the end, show the content of the three generated lists.
 numbers = list()
