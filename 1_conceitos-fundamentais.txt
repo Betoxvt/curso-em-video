@@ -1,0 +1,62 @@
+# 1. Conceitos Fundamentais
+
+## 1.1 Onde o Linux pode ser utilizado?
+
+### Casos em que são usados. Pelo menos o núcleo.
+* Servidores; 70% UNIX / Linux
+* Clusters de alto desempenho; 100%
+* Sistemas embarcados: Android; Playstations; Firefox O.S., TVs (WebOS), e outros;
+
+### Empresas que usam
+* IBM 'Linux, o futuro é aberto'
+* Intel, AMD, Google, Shell, Petrobras (super computador), Pixel, Oracle, Boeing, Motorola, Sony, Cisco, NASA...
+
+## 1.2 De onde veio o Linux? O que é software livre?
+
+#### Família Unix
+* Anos 60: Bell Labs > Saiu do projeto multix e iniciou o projeto UNIX. com assembly (não era importável, linguagem de máquina, processador) mas a ideia era unificar. De tanto mudar a linguagem P, B.. chegou em C. C foi feito para o Unix e Unix foi feito com C.
+* AT&T estava sendo investigados por monopólio de telecom, então não poderiam começar a vender o Unix, assim começaram a distribuir cópia mas sem oferecer suporte.
+* Regras determinadas pelo comitê POSIX
+* Aprendemos lendo o código fonte dos outros, o que será da próxima geração se os códigos forem todos fechados?
+
+### Manifesto GNU - GNU Not Unix
+* Unix não é livre
+* Produzir um SO baseado em unix mas totalmente livre, para todos aprenderem
+* AT&T entregou de graça e depois mas depois não mais e começou a cobrar, ai já era tarde
+* Brigas na justiça...
+
+### Sistema Operacional é composto por 3 partes (camadas)
+* Conjunto de utilitários = Utilities (ferramentas)
+-- API (Application Programing Interface)
+* Conjunto de bibliotecas = Libraries (blocos reutilizáveis)
+-- System Calls
+* Núcleo = Kernel (A base)
+
+### Linux
+* Linus Torvalds começou a fuçar no minix (micro kernel feito para aulas)
+* Outubro 1991, v002, usava ferramentas do GNU, tirou o HURD e colocou o Linux, virando GNU Linux
+* Abriu o projeto, "Just for fun", assim apareceram mais colaboradores, como Marcelo Tosatti
+
+## 1.3 Licenças e Liberdades: é importante saber
+
+* Licenças envolvem REGRAS, não necessariamente dinheiro;
+* Licenças pode sem gratuitas, pagas, por assinatura...
+* Podem ter o código aberto ou fechado...
+* Mais de 70 tipos de licença buscar no opensource.org
+* Entender a diferença entre software grátis e software livre
+
+### Licença GPL
+* A mais usada é a GPL2
+* Garante 4 liberdades:
+0. Executar: De usar pro que quiser (tem coisas que não pode)
+1. Estudar: Estudar, examinar e aprender
+2. Modificar: Adaptar o código
+3. Distribuir: Redistribuir da mesma maneira como recebeu (aberto)
+
+### Licença BSD
+* Exige um cabeçalho apenas
+* Pode fechar se quiser
+
+### Como a empresa se mantém?
+* Ganha com serviçoes agregados ao software livre
+
