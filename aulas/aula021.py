@@ -13,7 +13,7 @@
 
 help(input)
 print(input.__doc__)
-print('-='*20)
+print('-=' * 20)
 
 
 # > docstring
@@ -36,7 +36,7 @@ def counter(b, e, s):
 
 
 counter(2, 10, 2)
-print('-='*20)
+print('-=' * 20)
 
 
 # > Optional arguments
@@ -56,7 +56,7 @@ def _sum(a=0, b=0, c=0):
 
 
 _sum(2, 3, 4)
-print('-='*20)
+print('-=' * 20)
 
 
 # > Variable scope
@@ -109,4 +109,41 @@ result1 = _sum(2, 3, 4)
 result2 = _sum(2, 2)
 result3 = _sum(3)
 print(f'My calculations are {result1}, {result2}, {result3}')
+print('-=' * 20)
+
+
+# Practical examples
+# factorial
+
+def factorial(n=1):
+    f = 1
+    for c in range(n, 0, -1):
+        f *= c
+    return f
+
+
+n = int(input('Enter value: '))
+print(factorial(n))
+
+f1 = factorial(5)
+f2 = factorial(4)
+f3 = factorial()
+print(f1, f2, f3)
+print('-=' * 20)
+
+
+# even
+
+def even(n=0):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+
+
+num = int(input('Enter value: '))
+if even(num):
+    print(f'{num} is an even number')
+else:
+    print(f'{num} is not an even number')
 print('-='*20)
