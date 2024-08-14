@@ -11,22 +11,22 @@ def record(name='', goals=''):
 # Main program
 record(str(input("Player's name: ")), str(input("Player's score: ")))
 
-# Teacher Guanabara solution (transforms goals into integer number)
+# Teacher Guanabara solution - uses integer, best to analyze number of goals
 
-# def ficha(jog='<desconhecido>', gol=0):
-#     print(f'O jogador {jog} fez {gol} gol(s) no campeonato.')
+def ficha(jog='<desconhecido>', gol=0):
+    print(f'O jogador {jog} fez {gol} gol(s) no campeonato.')
 
 
 
 # Programa principal
-# n = str(input("Nome do Jogador: "))
-# g = str(input("Número de Gols: "))
-# if g.isnumeric():
-#     g = int(g)
-# else:
-#     g = 0
-# if n.strip() == '':
-#     ficha(gol=g)
-# else:
-#     ficha(n, g)
+n = str(input("Nome do Jogador: "))
+g = str(input("Número de Gols: "))
+if g.isnumeric():
+    g = int(g)
+else:
+    g = 0
+if n.strip() == '':
+    ficha(gol=g)
+else:
+    ficha(n, g)
 
