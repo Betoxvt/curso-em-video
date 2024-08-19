@@ -10,7 +10,7 @@
 def scores(scr, sit=False):
     """
     -> Reads multiple scores and return a dictionary with an analysis of quantity, highest, lowest, mean score and situation of student.
-    :param scr: float values for the student scores (one or more)
+    :param scr: list or tuple with float values for the student scores
     :param sit: optional bool value, show or not the situation
     :return: a dictionary with multiple informations
     """
