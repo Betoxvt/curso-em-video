@@ -7,7 +7,7 @@
 # - Situation (optional)
 # - Also add docstrings
 
-def scores(*scr, sit=False):
+def scores(scr, sit=False):
     """
     -> Reads multiple scores and return a dictionary with an analysis of quantity, highest, lowest, mean score and situation of student.
     :param scr: float values for the student scores (one or more)
@@ -30,5 +30,12 @@ def scores(*scr, sit=False):
         
 
 # Main program
-final = scores(6.5, 7.8, 9, sit=True)
-print(final)
+all_scores = list()
+while 999 not in all_scores:
+    all_scores.append(float(input('Enter score: [999 to stop] ')))
+all_scores.pop()
+situation = str(input('Want to show student situation? [y/n]')).strip().lower()[0]
+if situation == 'y':
+    print(scores(all_scores, sit=True))
+else:
+    print(scores(all_scores))
