@@ -4,7 +4,7 @@
 import coin
 
 p = float(input('Enter price: $'))
-print(f'The double of ${p:.2f} is ${coin.double(p):.2f}')
-print(f'The half of ${p:.2f} is ${coin.half(p):.2f}')
-print(f'Increasing 10%, we have ${coin.increase(p,10):.2f}')
-print(f'Decreasing 15%, we have ${coin.decrease(p,15):.2f}')
+print(f'The double of {p} is {coin.double(p)}')
+print(f'The half of {p} is {coin.half(p)}')
+print(f'Increasing 10%, we have {coin.increase(p,10)}')
+print(f'Decreasing 15%, we have {coin.decrease(p,15)}')
