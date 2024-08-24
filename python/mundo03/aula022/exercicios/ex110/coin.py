@@ -1,23 +1,23 @@
-def summary(n, i, d):
-    print('-'*30)
-    print('VALUE SUMMARY'.center(30))
-    print('-'*30)
-    print(f'{'Analyzed price:':<20}{coin(n)}')
-    print(f'{'Double price:':<20}{double(n)}')
-    print(f'{'Half price:':<20}{half(n)}')
-    print(f'{i}% increase:       {increase(n, i)}')
-    print(f'{d}% decrease:       {decrease(n, d)}')
-    print('-'*30)
+def summary(n, i=5, d=5):
+    print('-'*32)
+    print('VALUE SUMMARY'.center(32))
+    print('-'*32)
+    print(f'Analyzed price:\t\t{coin(n)}')
+    print(f'Double price:\t\t{double(n)}')
+    print(f'Half price:\t\t{half(n)}')
+    print(f'{i}% increase:\t\t{increase(n, i)}')
+    print(f'{d}% decrease:\t\t{decrease(n, d)}')
+    print('-'*32)
 
 
-def increase(n, p, m=True):
+def increase(n, p=5, m=True):
     i = n + n*p/100
     if m == True:
         i = coin(i)
     return i
 
 
-def decrease(n, p, m=True):
+def decrease(n, p=5, m=True):
     d = n - n*p/100
     if m == True:
         d = coin(d)
@@ -38,6 +38,6 @@ def half(n, m=True):
     return h
 
 
-def coin(n):
-    m = f'${n:.2f}'
+def coin(n=0, c='$'):
+    m = f'{c}{n:.2f}'
     return m
