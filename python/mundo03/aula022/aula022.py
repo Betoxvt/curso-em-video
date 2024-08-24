@@ -1,11 +1,3 @@
 # Modules and packages
-def factorial(n):
-    f = 1
-    for c in range(1, n + 1):
-        f *= c
-    return f
-
-
-num = int(input('Enter a value: '))
-fact = factorial(num)
-print(f'The factorial of {num} is {fact}')
+# You can create a package (folder), put a file named __init__.py
+# Inside this folder you can create files (modules) with functions or other folders with __init__.py inside with the desired functions.
