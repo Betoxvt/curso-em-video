@@ -3,6 +3,12 @@ def title(msg=''):
     print(msg.center(50))
     print('-'*50)
 
+def color(msg='', c=1):
+    if c == 1:
+        print(f'\033[31m{msg}\033[m')
+    if c == 2:
+        print(f'\033[32m{msg}\033[m')
+
 
 def main_menu():
         title('MAIN MENU')
@@ -20,32 +26,27 @@ def options():
             if option in OPTIONS:
                  return option
             else:
-                 print('\033[31m Please enter a valid option (1 - 3)\033[m')
+                 color('Please enter a valid option (1, 2 or 3)')
         except (ValueError, TypeError):
-             print('\033[31mAn error occurred: Please enter a valid integer number\033[m')
-        except KeyboardInterrupt:
-            print('\033[31mUser forced exit.\033[m')
-            break
-        except Exception as e:
-            print(f'\033[31mAn error occurred: {type(e).__name__}\033[m')
+             color('An error occurred: Not a valid input')
 
 
 def readPerson():
+    title('REGISTER NEW PERSON')
     while True:
         try:
             name = str(input('Name: ')).strip().title()
-            age = int(input('Age: '))
-            if len(name) == 0:
-                print('\033[31mPlease enter a name.\033[m')
+            if name.replace("'", "").replace(' ', '').isalpha():
+                age = int(input('Age: '))
+                if age < 150:
+                    color(f'Saving {name} with {age} y/o', 2)
+                    return [name, age]
+                else:
+                    color('Age invalid')
             else:
-                return [name, age]
+                color('Name invalid')
         except (ValueError, TypeError):
-            print('\033[31mAn error occurred:<Age> is an integer number]\033[m')
-        except KeyboardInterrupt:
-            print('\033[31mUser forced exit.\033[m')
-            break
-        except Exception as e:
-            print(f'\033[31mAn error occurred: {type(e).__name__}\033[m')
+            color('An error occurred: <Age> type or value')
 
 
 def exit():
@@ -53,13 +54,18 @@ def exit():
 
 
 def register(pData):
-    with open("./ex115_system/data/people.txt", "a") as file:
-        file.write(f'{pData[0]:.<40}{pData[1]:.>6} y/o\n')
+    try:
+        with open("./ex115_system/data/people.txt", "a") as file:
+            file.write(f'{pData[0]:.<40}{pData[1]:.>6} y/o\n')
+            color('Person registered with success!', 2)
+    except TypeError:
+        color('This object is not subscriptable')
+
 
 
 def see():
     with open("./ex115_system/data/people.txt", "r") as file:
         lines = file.readlines()
-        print('-'*50)
+        title('LIST OF REGISTERED PEOPLE')
         for line in lines:
             print(line.strip())
